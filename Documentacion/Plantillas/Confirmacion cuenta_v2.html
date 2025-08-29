@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>¡Cuenta Activada con Éxito!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4fb;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 51, 102, .1);
+        }
+        .header {
+            padding: 30px;
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .content {
+            padding: 30px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #036;
+            margin-bottom: 20px;
+        }
+        .info-box {
+            background-color: #e6f2ff;
+            border-left: 5px solid #005ea2;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .info-box p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .confirmation-box {
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .login-button {
+            display: inline-block;
+            background-color: #005ea2;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+        }
+        .additional-links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .additional-links a {
+            display: block;
+            margin-bottom: 10px;
+            color: #005ea2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f6fc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="https://s3.us-east-1.amazonaws.com/images.fedelza/comunicaciones/LogoFedelza.png" alt="Fedelza S.A.S">
+    </div>
+    <div class="content">
+        <p style="border-top:solid 1px grey;font-size:1;margin:0 auto;width:100%"></p>
+        <p class="greeting">Hola {{nombre}},</p>
+        
+        <p>¡Tu cuenta ha sido activada con éxito! Ya puedes iniciar sesión en nuestra plataforma para empezar a usar nuestros servicios.</p>
+
+        <div class="info-box">
+            <p><strong>Tu contraseña temporal es:</strong> <code>{{contrasena}}</code></p>
+            <p>🔐 Por tu seguridad, te pedimos que cambies tu contraseña una vez que inicies sesión por primera vez.</p>
+        </div>
+
+        <div class="confirmation-box">
+            <a href="{{url}}" class="login-button">Ir a iniciar sesión</a>
+        </div>
+
+        <div class="additional-links">
+            <p><strong>Información para el API:</strong></p>
+            <b>Pruebas:</b> https://fe.fedelza.com/Dev/V1/Security/Get-token
+            <b>Url Producción:</b> https://fe.fedelza.com/V1/Security/Get-token
+        </div>
+
+        <p>Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarnos.</p>
+
+        <p>Gracias por confiar en nosotros.</p>
+    </div>
+    <div class="footer">
+        &copy; 2025 Fedelza S.A.S. Todos los derechos reservados.
+    </div>
+</div>
+
+</body>
+</html>
